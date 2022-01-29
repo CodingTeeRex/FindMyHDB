@@ -46,3 +46,11 @@ Included below are some images for illustration purposes.
 ![image2](imgformd/2.png)
 ![image3](imgformd/3.png)
 ![image4](imgformd/4.png)
+
+---
+
+#### Credits
+Chen HongPo
+Ma Jiaxin
+Reeves Chiu
+Jovian
