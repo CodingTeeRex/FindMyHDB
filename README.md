@@ -64,4 +64,4 @@ Included below are some images for illustration purposes.
 ##### Chen HongPo <br/>
 ##### Ma Jiaxin <br/>
 ##### Reeves Chiu <br/>
-##### Jovian <br/>
+##### [Jovian Lim](https://github.com/Kiriketsuki) <br/>
