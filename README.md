@@ -29,6 +29,15 @@ This section provides a list of functions that is available within the applicati
 
 ---
 
+## P.S. Application is not currently hosted on a server.
+Included below are some images for illustration purposes.
+![image1](imgformd/1.png)
+![image2](imgformd/2.png)
+![image3](imgformd/3.png)
+![image4](imgformd/4.png)
+
+---
+
 ## References and API
 This section provides a list of APIs and references used in the project.
 > 1. [Google Maps API](https://developers.google.com/maps/documentation/embed/get-started)
@@ -40,16 +49,7 @@ This section provides a list of APIs and references used in the project.
 
 ---
 
-### P.S. Application is not currently hosted on a server.
-Included below are some images for illustration purposes.
-![image1](imgformd/1.png)
-![image2](imgformd/2.png)
-![image3](imgformd/3.png)
-![image4](imgformd/4.png)
-
----
-
-#### Credits
+##### Credits
 Chen HongPo <br/>
 Ma Jiaxin <br/>
 Reeves Chiu <br/>
