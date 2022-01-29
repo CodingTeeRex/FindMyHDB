@@ -60,8 +60,8 @@ Included below are some images for illustration purposes.
 
 ---
 
-##### Credits
-##### Chen HongPo <br/>
-##### Ma Jiaxin <br/>
-##### Reeves Chiu <br/>
-##### [Jovian Lim](https://github.com/Kiriketsuki) <br/>
+### Credits
+[Chen HongPo](https://github.com/pokerty) <br/>
+[Ma JiaXin](https://github.com/Jiaxin0009) <br/>
+[Reeves Chiu](https://github.com/Nydream) <br/>
+[Jovian Lim](https://github.com/Kiriketsuki) <br/>
