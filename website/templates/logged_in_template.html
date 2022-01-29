@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- boiler plate html -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- animate -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel = "stylesheet" href="{{ url_for('static',filename='styles/hover.css') }}">
+
+    <!-- base css -->
+    <link rel = "stylesheet" href = "{{ url_for('static',filename='styles/base.css') }}">
+
+    <!-- bonus css -->
+    {% block bonus_css %}
+    {% endblock %}
+
+    <!-- title -->
+    <title>
+        {% block title %}
+        Base template
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+    <!-- navbar DO NOT TOUCH -->
+    <nav class = "navbar no_select" id = "navbar">
+        <ul class = "navbar-nav no_select">
+            <li class = "logo">
+                <a href = "#" class = "nav-link">
+                    <!-- <i class="fab fa-connectdevelop"></i> -->
+                    <img src = "{{ url_for('static',filename='styles/logo/hdb_logo.svg') }}"/>
+                    <span class = "link-text logo-text" id = "nav_title">
+                        Place
+                        holders
+                    </span>
+                </a>
+            </li>
+
+            
+            <li class = "nav-item no_select">
+                <a href = "/recommendations" class = "nav-link">
+                    <i class="fas fa-home"></i>
+                    <span class = "link-text">
+                        Home
+                    </span>
+                </a>
+            </li>
+
+            <li class = "nav-item no_select">
+                <a href = "/favourites" class = "nav-link">
+                    <i class="fa-solid fa-star"></i>
+                    <span class = "link-text">
+                        Favourites
+                    </span>
+                </a>
+            </li>
+
+            <li class = "nav-item no_select">
+                <a href = "/settings" class = "nav-link">
+                    <i class="fa-solid fa-gears"></i>
+                    <span class = "link-text">
+                        Settings
+                    </span>
+                </a>
+            </li>
+
+            <li class = "nav-item no_select">
+                <a href="/sell" class = "nav-link">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span class = "link-text">
+                        Sell My House
+                    </span>
+                </a>
+            </li>
+
+            <li class = "nav-item no_select">
+                <a href = "/logout" class = "nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class = "link-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+
+            <!-- ! ivan why you touch i said no touching -->
+            <li class = "link-text"> 
+                {% block username %}
+                    Hello, {{user.firstName}} {{user.lastName}}
+                {% endblock %}
+            </li>
+
+            <li class = "nav-item no_select">
+                <a href="/about" class = "nav-link about" id = "about">
+                    <i class="fa-solid fa-building"></i>
+                    <span class = "link-text">
+                        About
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- boiler template -->
+    <main>
+    </div>
+        {% block main_content %}
+
+        {% endblock %}
+    </main>
+</body>
+
+<script src="https://kit.fontawesome.com/a2fab740ba.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</html>

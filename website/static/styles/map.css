@@ -1,0 +1,309 @@
+/* .navbar :hover {
+    position: relative;
+    background-color: violet;
+    z-index: 1000;
+} */
+
+:root {
+  scrollbar-color: rgba(108, 122, 137, 0.45);
+  scrollbar-width: 0.25rem;
+}
+
+.alert-container {
+  position: relative;
+  width: 90vw;
+}
+
+.alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  font-size: 35px;
+}
+
+html {
+  scrollbar-color: rgba(108, 122, 137, 0.45);
+  scrollbar-width: 0.25rem;
+  background-color: #5927e5;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(108, 122, 137, 0.45);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(46, 49, 49, 0.8);
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-color: rgba(108, 122, 137, 0.45);
+  scrollbar-width: 0.25rem;
+  background-color: #ffffff;
+}
+
+#title_bar {
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+}
+
+#main_div {
+  height: 100%;
+  width: 100%;
+}
+
+#hdb_image {
+  width: 20vw;
+  height: 20vw;
+  justify-self: center;
+  align-self: center;
+}
+
+#list {
+  height: 100%;
+  width: 100%;
+  border: 1px white;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.li {
+  border-radius: 1px 1px 1px 1px;
+}
+
+.ul {
+  border-radius: 1px;
+}
+
+/* .btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    top: 50%;
+  } */
+.btn-round {
+  margin: 0.5rem;
+  border-radius: 500px;
+  height: fit-content;
+  transition: transform 200ms ease;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px;
+}
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px;
+}
+
+.map iframe {
+  width: 96%;
+  height: 700px;
+  border: 10px solid #eea9c6;
+  margin: 40px 0px 0px 30px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 30px;
+    font-size:18px;
+    width: 80vw;
+    height: 100vh;
+}
+
+.page-header {
+  display: grid;
+  grid-template-areas: "text btn";
+  padding-bottom: 10px;
+  align-items: end;
+}
+
+.page-header .name {
+  grid-area: text;
+}
+.page-header .btn-container {
+  grid-area: btn;
+  margin-left: 24%;
+}
+.page-header .btn-container .btns {
+  border: none;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  /* box-shadow: 2px 3px gray; */
+}
+.line {
+  border-bottom: 3px solid black;
+  width: 70%;
+}
+.output{
+    display: grid;
+    grid-template-areas:
+        "img text line result";
+    grid-template-columns: 300px 250px 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.imgbox img{
+    grid-area: img;
+    height: 250px;
+    width: 250px;
+}
+.contentleft {
+  grid-area: text;
+}
+.contentright {
+  grid-area: result;
+}
+.v1 {
+  grid-area: line;
+  border-left: 3px solid black;
+  height: 100%;
+}
+.links {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 1vh;
+  /* width: 330px; */
+  gap: 2vw;
+}
+
+.map {
+    max-width: 90vw;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+  border: none;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  box-shadow: 2px 3px gray;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  border-radius: 100px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

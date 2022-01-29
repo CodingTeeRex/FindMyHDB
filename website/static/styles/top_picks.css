@@ -1,0 +1,167 @@
+/* .navbar :hover {
+    position: relative;
+    background-color: violet;
+    z-index: 1000;
+} */
+
+/* !colour scheme : */
+/* main : #a6e2ec */
+/* secondary: #eea9c6 */
+/* complimentary: #a4c784 */
+
+/* todo figure out sass and modify bootstrap colours */
+
+/* :root {
+    scrollbar-color: rgba(108, 122, 137, 0.45);
+    scrollbar-width: 0.25rem;
+    --bs-list-group-bg: #eea9c6;
+}
+html {
+    scrollbar-color: rgba(108, 122, 137, 0.45);
+    scrollbar-width: 0.25rem;
+    background-color: rgba(166,226,236,255);
+}
+.alert-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+}
+.alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.close {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  font-size: 35px;
+}
+::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+::-webkit-scrollbar-track {
+background: rgba(108, 122, 137, 0.45);
+}
+::-webkit-scrollbar-thumb {
+background: rgba(46, 49, 49, 0.8);
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scrollbar-color: rgba(108, 122, 137, 0.45);
+    scrollbar-width: 0.25rem;
+    background-color: #a6e2ec;
+}
+#title_bar {
+    font-family: "Lobster", serif;
+    font-style: italic;
+    color: #eea9c6;
+    font-size: 2.5rem;
+}
+#main_div {
+    grid-row-start: b;
+    grid-row-end: n;
+    grid-column-start: b;
+    grid-column-end: d;
+    height: 100%;
+    width: 100%;
+    margin-left: -10vw;
+}
+#hdb_image {
+    width: 20vw;
+    height: 20vw;
+    justify-self: center;
+    align-self: center;
+}
+#list {
+    height: 100%;
+    width: 100%;
+    border: 1px white;
+}
+li> ul> li {
+    background-color: #c3b175;
+}
+.ul {
+    border-radius: 1px;
+} */
+
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 30px;
+    font-size:18px;
+    width: 80vw;
+    height: 100vh;
+}
+
+.page-header{
+    display: grid;
+    grid-template-areas:
+        "text btn";
+    padding-bottom: 10px;
+    align-items: end;
+}
+
+.page-header .name{
+    grid-area: text;
+}
+.page-header .btn-container{
+    grid-area: btn;
+    margin-left: 24%;
+}
+.page-header .btn-container #btn{
+    border: none;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    /* box-shadow: 2px 3px gray; */
+}
+.line{
+    border-bottom: 3px solid black;
+    width: 70%;
+}
+.output{
+    display: grid;
+    grid-template-areas:
+        "img text line result";
+    grid-template-columns: 300px 250px 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.imgbox img{
+    grid-area: img;
+    height: 250px;
+    width: 250px;
+}
+.contentleft{
+    grid-area: text;
+}
+.contentright{
+    grid-area: result;
+}
+.v1{
+    grid-area: line;
+    border-left: 3px solid black;
+    height: 100%;
+}
+.links {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: 1vh;
+    /* width: 330px; */
+    gap: 2vw;
+}

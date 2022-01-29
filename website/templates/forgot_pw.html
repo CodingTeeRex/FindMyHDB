@@ -1,0 +1,17 @@
+{% extends "sign_up.html" %}
+
+{% block tabtitle %}
+    <title>Forgot password</title>
+{% endblock %}
+
+{% block title %}
+    <h1 class="sign-up-txt">Forgot Password</h1>
+{% endblock %}
+
+{% block form %}
+    <form method="POST" class="flex-vertical">
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+        <button type="submit" class="btn btn-dark btn-round">Submit</button>
+    </form>
+{% endblock %}
+
