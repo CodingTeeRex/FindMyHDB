@@ -50,7 +50,7 @@ Included below are some images for illustration purposes.
 ---
 
 #### Credits
-Chen HongPo
-Ma Jiaxin
-Reeves Chiu
-Jovian
+Chen HongPo <br/>
+Ma Jiaxin <br/>
+Reeves Chiu <br/>
+Jovian <br/>
